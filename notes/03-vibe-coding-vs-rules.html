@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vibe Coding 與規則驅動開發｜生成式AI 學習筆記</title>
+  <meta name="description" content="為什麼一次做出來不夠，需要一套能重複使用的專案規則。">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="inner">
+      <a class="site-title" href="../index.html">生成式<span>AI</span> 學習筆記</a>
+      <nav class="site-nav">
+        <a href="../index.html">首頁</a>
+        <a href="../about.html">關於本站</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <article>
+      <p class="note-meta">筆記 03 · 2026-11-16 · 約 4 分鐘</p>
+      <h1>Vibe Coding 與規則驅動開發</h1>
+      <p class="lead">Vibe coding 解決「做出這一個」；規則驅動解決「之後每一個都做得一樣好」。</p>
+
+      <h2>重點</h2>
+      <ul>
+        <li><strong>Vibe coding</strong>：用自然語言描述想法，讓 AI 直接產出成果，重點是快速做出來。</li>
+        <li>缺點：每次對話都從零開始，風格、結構、命名容易不一致。</li>
+        <li><strong>規則驅動開發</strong>：先把規則寫成文件，讓 AI 每次都依同一套方式工作。</li>
+        <li>規則文件的價值在於<strong>可重複使用與可延伸</strong>。</li>
+      </ul>
+
+      <h2>說明</h2>
+      <table>
+        <thead>
+          <tr><th></th><th>Vibe coding</th><th>規則驅動開發</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>起點</td><td>一個想法或一句需求</td><td>一份寫好的專案規則</td></tr>
+          <tr><td>重點</td><td>把這個網頁做出來</td><td>讓之後的頁面都能照同一套方式做</td></tr>
+          <tr><td>一致性</td><td>靠運氣與反覆提醒</td><td>寫在文件裡，AI 每次都會讀</td></tr>
+          <tr><td>換人／換對話</td><td>要重新交代一遍</td><td>新的 AI 讀文件就能接手</td></tr>
+          <tr><td>適合</td><td>原型、一次性小工具</td><td>會持續成長的專案</td></tr>
+        </tbody>
+      </table>
+
+      <p>兩者不是對立：<strong>用 vibe coding 快速起步，再把做得好的結構與慣例整理成規則</strong>，專案就能穩定長大。</p>
+
+      <h2>範例</h2>
+      <p>以這個筆記網站為例：</p>
+      <pre><code>沒有規則時：
+「幫我新增一篇筆記。」
+→ AI 可能換了版型、改了檔名風格、忘了更新首頁。
+
+有 CLAUDE.md 時：
+「依照 CLAUDE.md 新增一篇關於 RAG 的筆記。」
+→ AI 會複製模板、使用 05-xxx.html 命名、
+  同步更新首頁卡片與上一篇／下一篇連結。</code></pre>
+
+      <div class="callout">
+        <p><strong>判斷標準：</strong>如果你發現自己在不同對話裡，一再重複說同樣的要求，就是該把它寫進規則文件的時候。</p>
+      </div>
+
+      <h2>小結</h2>
+      <p>Vibe coding 讓想法很快變成作品；規則文件讓作品能夠持續長大而不走樣。把重複的要求寫下來，等於把「怎麼做事」交給 AI 一起記住。</p>
+
+      <h2>自我檢查</h2>
+      <ul>
+        <li>我在哪些專案裡，一直在重複對 AI 說同樣的話？</li>
+        <li>這些重複的話，可以整理成哪三條規則？</li>
+      </ul>
+    </article>
+
+    <nav class="pager">
+      <a class="prev" href="02-prompt-basics.html"><small>上一篇</small>提示詞基本功</a>
+      <a class="next" href="04-writing-claude-md.html"><small>下一篇</small>怎麼寫好 CLAUDE.md</a>
+    </nav>
+  </main>
+
+  <footer class="site-footer">
+    <p>郭奕和｜長庚大學 人工智慧學系｜「生成式AI」課程學習筆記</p>
+    <p>本站依照專案根目錄的 CLAUDE.md 規則，與 AI 協作製作。</p>
+  </footer>
+</body>
+</html>

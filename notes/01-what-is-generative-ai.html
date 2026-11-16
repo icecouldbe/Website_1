@@ -1,1 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>什麼是生成式 AI｜生成式AI 學習筆記</title>
+  <meta name="description" content="生成式 AI 能做什麼、背後怎麼運作，以及為什麼會一本正經地胡說八道。">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="inner">
+      <a class="site-title" href="../index.html">生成式<span>AI</span> 學習筆記</a>
+      <nav class="site-nav">
+        <a href="../index.html">首頁</a>
+        <a href="../about.html">關於本站</a>
+      </nav>
+    </div>
+  </header>
 
+  <main class="container">
+    <article>
+      <p class="note-meta">筆記 01 · 2026-11-16 · 約 4 分鐘</p>
+      <h1>什麼是生成式 AI</h1>
+      <p class="lead">能「產生新內容」的 AI：文字、圖片、程式碼、聲音都行，但它的答案需要你自己查證。</p>
+
+      <h2>重點</h2>
+      <ul>
+        <li>生成式 AI（Generative AI）是能根據輸入，<strong>產生新內容</strong>的模型，而不只是分類或預測。</li>
+        <li>大型語言模型（LLM）的核心工作，可以簡化成：<strong>根據前文，預測下一個 token</strong>。</li>
+        <li>它很擅長改寫、摘要、翻譯、寫程式草稿，但也會出現<strong>幻覺（hallucination）</strong>。</li>
+        <li>用它的基本態度：<strong>當作很快的助手，不是標準答案</strong>。</li>
+      </ul>
+
+      <h2>說明</h2>
+      <h3>和傳統 AI 差在哪？</h3>
+      <table>
+        <thead>
+          <tr><th></th><th>傳統判別式 AI</th><th>生成式 AI</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>任務</td><td>判斷、分類、預測</td><td>產生新的文字、圖片、程式碼</td></tr>
+          <tr><td>輸出</td><td>標籤或數字，例如「垃圾郵件」</td><td>一段完整內容，例如一封回信</td></tr>
+          <tr><td>例子</td><td>人臉辨識、推薦系統</td><td>ChatGPT、Claude、圖像生成模型</td></tr>
+        </tbody>
+      </table>
+
+      <h3>LLM 大致怎麼運作？</h3>
+      <p>文字會先被切成 <strong>token</strong>（可能是一個字、半個字或一小段詞），模型以大量文本訓練後，學會在給定上文時，替下一個 token 估計機率，再一個一個接下去，就形成一段回答。常見的模型架構是 Transformer。</p>
+
+      <div class="callout warn">
+        <p><strong>為什麼會胡說八道？</strong>模型學的是「看起來合理的接法」，不是「查資料庫確認為真」。所以它可能很流暢地說出錯誤的人名、數字或引用，這就是幻覺。</p>
+      </div>
+
+      <h2>範例</h2>
+      <p>同一個問題，不同用法差很多：</p>
+      <pre><code>適合：「幫我把這段會議記錄整理成 3 個重點。」
+需小心：「幫我列出 5 篇關於這個主題的論文與網址。」
+        → 容易編出不存在的論文，一定要自己去查。</code></pre>
+
+      <h2>小結</h2>
+      <p>生成式 AI 是強大的內容產生工具，擅長「草稿」與「整理」。只要記得它是在預測合理的內容、而不是保證正確，就能把它用在對的地方，並養成查證的習慣。</p>
+
+      <h2>自我檢查</h2>
+      <ul>
+        <li>我最近一次請 AI 幫忙，有沒有查證它說的內容？</li>
+        <li>哪些工作適合交給 AI 起草，哪些一定要自己把關？</li>
+      </ul>
+    </article>
+
+    <nav class="pager">
+      <a class="next" href="02-prompt-basics.html"><small>下一篇</small>提示詞基本功</a>
+    </nav>
+  </main>
+
+  <footer class="site-footer">
+    <p>郭奕和｜長庚大學 人工智慧學系｜「生成式AI」課程學習筆記</p>
+    <p>本站依照專案根目錄的 CLAUDE.md 規則，與 AI 協作製作。</p>
+  </footer>
+</body>
+</html>

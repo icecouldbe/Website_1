@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>怎麼寫好 CLAUDE.md｜生成式AI 學習筆記</title>
+  <meta name="description" content="讓 AI 一讀就懂專案的目的、結構與開發規則。">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="inner">
+      <a class="site-title" href="../index.html">生成式<span>AI</span> 學習筆記</a>
+      <nav class="site-nav">
+        <a href="../index.html">首頁</a>
+        <a href="../about.html">關於本站</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <article>
+      <p class="note-meta">筆記 04 · 2026-11-16 · 約 5 分鐘</p>
+      <h1>怎麼寫好 CLAUDE.md</h1>
+      <p class="lead">CLAUDE.md（或 AGENTS.md）是寫給 AI 看的專案說明書：越具體、越能驗證，AI 越能照著做。</p>
+
+      <h2>重點</h2>
+      <ul>
+        <li>放在<strong>專案根目錄</strong>，AI 工具開始工作時會讀取它；<code>AGENTS.md</code> 是類似用途、較通用的檔名。</li>
+        <li>要回答：<strong>這個專案是什麼？檔案放哪？新增內容照什麼格式？什麼不能做？</strong></li>
+        <li>寫<strong>具體可檢查</strong>的規則，避免「請寫得好看一點」這種模糊句。</li>
+        <li>保持<strong>精簡</strong>；有新慣例就更新，過時的就刪掉。</li>
+      </ul>
+
+      <h2>說明</h2>
+      <h3>建議放進去的內容</h3>
+      <ol>
+        <li><strong>專案目的</strong>：做什麼、給誰看、用什麼語言。</li>
+        <li><strong>技術與限制</strong>：用什麼技術、不用什麼。</li>
+        <li><strong>風格</strong>：配色、版面、語氣。</li>
+        <li><strong>目錄結構</strong>：重要檔案與資料夾的用途。</li>
+        <li><strong>新增內容的流程</strong>：一步一步的標準作法與固定格式。</li>
+        <li><strong>命名規則</strong>：檔名、連結寫法。</li>
+        <li><strong>禁止事項</strong>：AI 不該自己動的東西。</li>
+        <li><strong>完成前檢查清單</strong>：怎麼確認做對了。</li>
+      </ol>
+
+      <h3>好壞規則的差別</h3>
+      <table>
+        <thead>
+          <tr><th>模糊（不建議）</th><th>具體（建議）</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>網頁要好看、簡潔</td><td>只使用 <code>style.css</code> 的 CSS 變數；內容寬度不超過 760px</td></tr>
+          <tr><td>檔名要整齊</td><td>筆記檔名為 <code>NN-kebab-case.html</code>，不使用中文</td></tr>
+          <tr><td>內容要完整</td><td>每篇固定有重點、說明、範例、小結、自我檢查五個章節</td></tr>
+          <tr><td>不要亂改東西</td><td>不刪除既有頁面、不引入框架、不改共用頁首頁尾</td></tr>
+        </tbody>
+      </table>
+
+      <h2>範例</h2>
+      <p>本站 <code>CLAUDE.md</code> 的「新增筆記」段落節錄：</p>
+      <pre><code>## 新增一篇筆記的標準流程
+1. 複製 templates/note-template.html 到 notes/NN-英文短名.html
+2. 填入標題、日期、一句話摘要
+3. 章節固定：重點 → 說明 → 範例 → 小結 → 自我檢查
+4. 設定上一篇／下一篇，並更新前一篇的「下一篇」連結
+5. 在 index.html 新增卡片，並更新 README.md</code></pre>
+
+      <div class="callout">
+        <p><strong>驗收方式：</strong>開一個全新的對話，只給 AI 這份文件，請它新增一篇筆記。如果結果和既有頁面風格一致，就代表規則寫得夠清楚。</p>
+      </div>
+
+      <h2>小結</h2>
+      <p>好的 CLAUDE.md 像是給新同事的入門手冊：讀完就知道專案是什麼、東西放哪、怎麼新增、哪些不要碰。把規則寫具體，AI 才能穩定地接手並延伸專案。</p>
+
+      <h2>自我檢查</h2>
+      <ul>
+        <li>如果換一個全新的 AI 來接手，它只靠我的規則，做得出一致的頁面嗎？</li>
+        <li>我的規則裡，哪幾句其實是「模糊的形容」，可以改成可檢查的條件？</li>
+      </ul>
+    </article>
+
+    <nav class="pager">
+      <a class="prev" href="03-vibe-coding-vs-rules.html"><small>上一篇</small>Vibe Coding 與規則驅動開發</a>
+    </nav>
+  </main>
+
+  <footer class="site-footer">
+    <p>郭奕和｜長庚大學 人工智慧學系｜「生成式AI」課程學習筆記</p>
+    <p>本站依照專案根目錄的 CLAUDE.md 規則，與 AI 協作製作。</p>
+  </footer>
+</body>
+</html>
