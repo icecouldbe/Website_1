@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>關於本站｜生成式AI 學習筆記</title>
+  <meta name="description" content="說明本站的製作方式：先寫 CLAUDE.md 規則，再讓 AI 依規則新增頁面。">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="inner">
+      <a class="site-title" href="index.html">生成式<span>AI</span> 學習筆記</a>
+      <nav class="site-nav">
+        <a href="index.html">首頁</a>
+        <a href="about.html" aria-current="page">關於本站</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <article>
+      <p class="note-meta">關於本站</p>
+      <h1>先寫規則，再讓 AI 做事</h1>
+      <p class="lead">本站的重點不只是網頁本身，而是一套讓 AI 能「接著做下去」的專案規則。</p>
+
+      <h2>專案目的</h2>
+      <p>把「生成式AI」課程的學習內容，整理成短篇、好讀的筆記網站。作者：郭奕和，長庚大學人工智慧學系。</p>
+
+      <h2>規則放在哪裡</h2>
+      <p>專案根目錄有一份 <code>CLAUDE.md</code>，AI 開始工作前會先讀它。內容包含：</p>
+      <table>
+        <thead>
+          <tr><th>章節</th><th>規範什麼</th><th>在網站上的對應</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>專案目的</td><td>主題、讀者、語言</td><td>首頁簡介、繁體中文內容</td></tr>
+          <tr><td>視覺風格</td><td>配色、字體、版面寬度</td><td><code>assets/style.css</code> 的 CSS 變數</td></tr>
+          <tr><td>目錄結構</td><td>檔案該放哪裡</td><td><code>notes/</code>、<code>templates/</code></td></tr>
+          <tr><td>新增筆記流程</td><td>固定章節與步驟</td><td>每篇筆記都有「重點／說明／範例／小結／自我檢查」</td></tr>
+          <tr><td>命名規則</td><td>檔名、相對連結</td><td><code>01-what-is-generative-ai.html</code> 這類檔名</td></tr>
+          <tr><td>AI 修改規則</td><td>可以做與不可以做的事</td><td>不刪頁面、不引入框架、不放個人敏感資料</td></tr>
+        </tbody>
+      </table>
+
+      <h2>如何新增一篇筆記</h2>
+      <p>只要對 AI 說一句話，例如：</p>
+      <pre><code>請依照 CLAUDE.md，新增一篇關於「RAG 檢索增強生成」的筆記。</code></pre>
+      <p>AI 會依照規則完成這些事：</p>
+      <ol>
+        <li>複製 <code>templates/note-template.html</code>，命名為 <code>notes/05-rag-basics.html</code>。</li>
+        <li>依固定章節填入內容，並設定上一篇／下一篇導覽。</li>
+        <li>在首頁的筆記列表新增卡片，並更新 <code>README.md</code>。</li>
+        <li>檢查連結、章節順序與樣式，回報修改了哪些檔案。</li>
+      </ol>
+
+      <div class="callout">
+        <p><strong>為什麼這樣設計？</strong>Vibe coding 的重點是「把這一個網頁做出來」；規則驅動則是讓之後的每一個頁面，都能用同一套方式快速、一致地做出來。</p>
+      </div>
+
+      <h2>原始碼</h2>
+      <p>完整專案與 <code>CLAUDE.md</code> 放在 GitHub：<a href="https://github.com/icecouldbe/Website_1">https://github.com/icecouldbe/Website_1</a></p>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <p>郭奕和｜長庚大學 人工智慧學系｜「生成式AI」課程學習筆記</p>
+    <p>本站依照專案根目錄的 CLAUDE.md 規則，與 AI 協作製作。</p>
+  </footer>
+</body>
+</html>
